@@ -1,6 +1,6 @@
-import './App.css'
+import './App.css';
 import NavBar from './navbar';
-// import Main_Image from  '../../public/assets/imgs/guerra.png'
+import Main_Image from  '../../public/assets/imgs/guerra.png';
 // import Logo from '../../public/assets/imgs/logo.png'
 
 function Home() {
@@ -9,7 +9,7 @@ function Home() {
     {/* <img src={Logo} className='logo-landing-page'/> */}
     <div className="home-container">
         <div className='image-container'>
-          {/* <img src={Main_Image} /> */}
+          <img src={Main_Image} />
           <div className='overlay'>
 
           
