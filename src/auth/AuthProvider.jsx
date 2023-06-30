@@ -4,10 +4,10 @@ import PropTypes from 'prop-types';
 
 
 function AuthProvider({ children }) {
-    const [token, setToken] = useState(localStorage.getItem('token') || null);
+    const [token, setToken] = useState(localStorage.getItem('token') || "null");
 
     function logout() {
-        setToken(null)
+        setToken("null")
     }
 
     useEffect(() => {

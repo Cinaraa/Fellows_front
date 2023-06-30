@@ -1,9 +1,8 @@
 import './App.css'
 import NavBar from './navbar';
-import Main_Image from  '../assets/imgs/Guerra.png'
-import Logo from '../assets/imgs/Logo.png'
+import Main_Image from  '../../public/assets/imgs/Guerra.png'
+import Logo from '../../public/assets/imgs/Logo.png'
 
-//import { SessionContext } from './user/usercontext';
 function Home() {
   return (
     <>

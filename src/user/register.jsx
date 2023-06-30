@@ -2,6 +2,7 @@ import { useState } from 'react';
 import NavBar from '../common/navbar';
 import './Form.css';
 import axios from 'axios';
+import API_URL from "../config";
 
 function Register() {
 
@@ -10,18 +11,19 @@ function Register() {
   const [password, setPassword] = useState("");
   const [error, setError] = useState(false);
   const [msg, setMsg] = useState("");
+  const [signup,setSignup] = useState(false)
 
   const handleSubmit = async (event) => {
     event.preventDefault();
     //axios.post(`${import.meta.env.BACKEND_URL}/signup`, {
-    axios.post("http://localhost:3000/signup",{    
+    axios.post(`${API_URL}/signup`,{    
     name: name,
         mail: mail,
         password: password
-      }).then((/*response*/) => {
-        console.log('Registro exitoso! Ahora puedes volver y loguearte');
+      }).then((response) => {
         setError(false);
-        setMsg('Registro exitoso! Ahora puedes volver y loguearte');
+        setMsg(response.username);
+        setSignup(true)
       }).catch((error) => {      
       console.error('Ocurrió un error:', error.message);
       setError(true); // aquí puede haber más lógica para tratar los errores
@@ -33,10 +35,15 @@ function Register() {
         <NavBar />
         <br></br>
         <br></br>
-        {msg.length > 0 && <div className="successMsg"> {msg} </div>}
-
         {error && <div className="error">{error.message} Hubo un error con el Registro, por favor trata nuevamente.</div>}
-        <div className='form-user-sesion'>
+        {signup?(
+          <div className='options-after-login-box center'>
+          {msg.length > 0 && <div className="successMsg"> {msg} </div>}
+          <div className="container-options-btn-after-login">
+          <a href='/login'>Iniciar Sesión</a>
+          <a href='/'>Ir al inicio</a>
+          </div>
+          </div>):(<div className='form-user-sesion'>
             <br></br>
             <h1 className='title-user-form-sesion'>Sign Up </h1>
             <br></br>
@@ -59,7 +66,7 @@ function Register() {
                 </div>
                 <input type="submit" value="Enviar" className='btn-form-user-sesion'/>
             </form>
-        </div>
+        </div>)}
     </div>
   );
 }

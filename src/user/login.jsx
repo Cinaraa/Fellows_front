@@ -4,7 +4,7 @@ import NavBar from '../common/navbar';
 import axios from 'axios';
 import { AuthContext } from '../auth/AuthContext';
 import './form.css';
-
+import API_URL from "../config";
 
 
 function Login() {
@@ -13,6 +13,7 @@ function Login() {
   const [password, setPassword] = useState("");
   const [error, setError] = useState(false);
   const [msg, setMsg] = useState("");
+  
   //const [loggedIn, setLoggedIn] = useState(false);
   //const [redirectToHome, setRedirectToHome] = useState(false);
 
@@ -20,7 +21,7 @@ function Login() {
     event.preventDefault();
 
     //axios.post(`${import.meta.env.BACKEND_URL}/login`, {
-    axios.post("http://localhost:3000/login",{
+    axios.post(`${API_URL}/login`,{
         mail: mail,
         password: password
       }).then((response) => {
@@ -67,11 +68,11 @@ function Login() {
         </div>):
         (
           <div className='options-after-login-box center'>
-          {msg.length > 0 && <div className="successMsg"> {msg} </div>}
-          <h2>Bienvenido:</h2>
+          {msg.length > 0 && 
+          <h2>Bienvenido: {msg}</h2>}
           <div className="container-options-btn-after-login">
-          <button >Jugar</button>
-          <button>Ir al inicio</button>
+          <a href="/rooms">Jugar</a>
+          <a href='/'>Ir al inicio</a>
           </div>
           </div>
       )}

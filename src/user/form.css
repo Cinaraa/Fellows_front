@@ -67,7 +67,7 @@
   justify-content: center;
   height: 80vh; /* Ajusta la altura del contenedor según tus necesidades */
 }
-.container-options-btn-after-login button {
+.container-options-btn-after-login a {
   /* Estilos adicionales para los botones */
   /* Ejemplo de estilos: */
   padding: 10px 20px;
@@ -79,6 +79,6 @@
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
   transition: background-color 0.3s ease;
 }
-.container-options-btn-after-login button:hover {
+.container-options-btn-after-login a:hover {
   background-color: #2b7435;
 }

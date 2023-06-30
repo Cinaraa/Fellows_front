@@ -1,8 +1,8 @@
 import './PlayerTable.css';
-import PlayerRed from '../assets/imgs/rojo.png'
-import PlayerGreen from '../assets/imgs/Verde.png'
-import PlayerBlue from '../assets/imgs/Azul.png'
-import PlayerYellow from '../assets/imgs/Amarillo.png'
+import PlayerRed from '../../public/assets/imgs/rojo.png'
+import PlayerGreen from '../../public/assets/imgs/Verde.png'
+import PlayerBlue from '../../public/assets/imgs/Azul.png'
+import PlayerYellow from '../../public/assets/imgs/Amarillo.png'
 
 const PlayerTable = () => {
   return (

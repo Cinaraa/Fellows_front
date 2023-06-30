@@ -1,6 +1,6 @@
 import './Principal.css'
 import NavBar from '../common/navbar';
-import Logo from '../assets/imgs/Logo.png'
+import Logo from '../../public/assets/imgs/Logo.png'
 
 //import { SessionContext } from './user/usercontext';
 function Principal() {
@@ -11,7 +11,7 @@ function Principal() {
     <div className="home-container">
           <div className='buttons'>
           <a href='/game'>Jugar!!</a>
-          <a href='/closeSesion'>Cerrar Sesión :C </a>
+          <a href='/rooms'>Cerrar Sesión :C </a>
 
           </div>
     </div>

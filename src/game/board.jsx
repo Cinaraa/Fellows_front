@@ -1,46 +1,49 @@
 import './Board.css';
+import Cell from './cell';
+
 
 const Board = () => {
   return (
     <div className="board">
-      <div className="cell border-cell" id ={16}>16</div>
-      <div className="cell border-cell" id ={17}>17</div>
-      <div className="cell border-cell" id ={18}>18</div>
-      <div className="cell border-cell" id ={19}>19</div>
-      <div className="cell border-cell" id ={20}>20</div>
-      <div className="cell border-cell" id ={21}>21</div>
-      <div className="cell border-cell" id ={22}>22</div>
-      <div className="cell border-cell" id ={23}>23</div>
-      <div className="cell border-cell" id ={24}>24</div>
-      <div className="cell border-cell" id ={25}>25</div>
+      <Cell id={16} name="16" price="price" />
+      <Cell id={17} name="17" price="price" />
+      <Cell id={18} name="18" price="price" />
+      <Cell id={19} name="19" price="price" />
+      <Cell id={20} name="20" price="price" />
+      <Cell id={21} name="21" price="price" />
+      <Cell id={22} name="22" price="price" />
+      <Cell id={23} name="23" price="price" />
+      <Cell id={24} name="24" price="price" />
+      <Cell id={25} name="25" price="price" />
 
 
-      <div className="cell border-cell" id ={15}>15</div>
-      <div className="center-cell"></div>
-      <div className="cell border-cell" id ={26}>26</div>
-      <div className="cell border-cell" id ={14}>14</div>
+      <Cell id={15} name="15" price="price" />
+      <div className="center-cell">      
+      </div>
+      <Cell id={26} name="26" price="price" />
+      <Cell id={14} name="14" price="price" />
       
-      <div className="cell border-cell" id ={27}>27</div>
-      <div className="cell border-cell" id ={13}>13</div>
+      <Cell id={27} name="27" price="price" />
+      <Cell id={13} name="13" price="price" />
 
-      <div className="cell border-cell" id ={28}>28</div>
-      <div className="cell border-cell" id ={12}>12</div>
+      <Cell id={28} name="28" price="price" />
+      <Cell id={12} name="12" price="price" />
 
-      <div className="cell border-cell" id ={29}>29</div>
-      <div className="cell border-cell" id ={11}>11</div>
+      <Cell id={29} name="29" price="price" />
+      <Cell id={11} name="11" price="price" />
 
-      <div className="cell border-cell" id ={30}>30</div>
-      <div className="cell border-cell" id ={10}>10</div>
-      <div className="cell border-cell" id ={9}>9</div>
-      <div className="cell border-cell" id ={8}>8</div>
-      <div className="cell border-cell" id ={7}>7</div>
-      <div className="cell border-cell" id ={6}>6</div>
-      <div className="cell border-cell" id ={5}>5</div>
-      <div className="cell border-cell" id ={4}>4</div>
-      <div className="cell border-cell" id ={3}>3</div>
-      <div className="cell border-cell" id ={2}>2</div>
-      <div className="cell border-cell" id ={1}>1</div>
+      <Cell id={30} name="30" price="price" />
+      <Cell id={10} name="10" price="price" />
+      <Cell id={9} name="9" price="price" />
+      <Cell id={8} name="8" price="price" />
+      <Cell id={7} name="7" price="price" />
+      <Cell id={6} name="6" price="price" />
+      <Cell id={5} name="5" price="price" />
+      <Cell id={4} name="4" price="price" />
 
+      <Cell id={3} name="3" price="price" />
+      <Cell id={2} name="2" price="price" />
+      <Cell id={1} name="1" price="price" />
       
       </div>
   );

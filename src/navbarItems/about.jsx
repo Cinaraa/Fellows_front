@@ -1,7 +1,7 @@
 import NavBar from '../common/navbar'
-import the_fellows from '../assets/imgs/The_fellows.jpg'
-import Bea from '../assets/imgs/bea.jpg'
-import Cesar from '../assets/imgs/Cesar.jpeg'
+import the_fellows from '../../public/assets/imgs/The_fellows.jpg'
+import Bea from '../../public/assets/imgs/bea.jpg'
+import Cesar from '../../public/assets/imgs/Cesar.jpeg'
 import './About.css'
 
 export default function About(){

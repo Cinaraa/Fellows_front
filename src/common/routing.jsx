@@ -1,14 +1,17 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import App from './App'
-import About from '../navbarItems/About'
-import Login from '../user/Login'
-import Register from '../user/Register'
-import Principal from '../vistas/Principal'
-import Game from '../game/Game'
-import Instructions from '../navbarItems/Instructions'
+import About from '../navbarItems/about'
+import Login from '../user/login'
+import Register from '../user/register'
+import Principal from '../vistas/principal'
+import Game from '../game/game'
+import Instructions from '../navbarItems/instructions'
+
+
 import AdminCheck from '../protected/AdminCheck'
 import UserCheck from '../protected/UserCheck'
-
+import Rooms from '../vistas/rooms'
+import Partida from '../game/partida'
 
 function Routing(){
     return (
@@ -23,6 +26,8 @@ function Routing(){
             <Route path={"/instructions"} element={<Instructions/>}></Route>
             <Route path={"/admincheck"} element={<AdminCheck />}/>
             <Route path={"/usercheck"} element={<UserCheck />}/>
+            <Route path={"/rooms"} element={<Rooms/>}/>
+            <Route exact path={"/game/:gameId"} element={<Partida/>}/>
             </Routes>
       </BrowserRouter>
 

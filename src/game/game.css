@@ -7,16 +7,16 @@
   }
   
   
-  .pagina {
-    grid-column: span 2;
-
-  }
-  
   .logo-game-page {
-    grid-column:  span 1;
+    grid-column:  span 2;
     width: 100px;
     height: auto;
   }
+
+  /* .space {
+    grid-column:  span 2;
+    grid-row: span 1;
+  } */
 
   .Board{
     grid-column:  span 2;
@@ -30,6 +30,7 @@
 
   .dice{
     grid-column:  span 1;
+    grid-row: span 1;
   }
 /*   
   .content {
@@ -49,7 +50,7 @@
     order: 2;
   } */
   
-  @media (max-width: 768px) {
+  /* @media (max-width: 768px) {
     .game {
       grid-template-columns: 1fr;
       grid-template-rows: auto 1fr auto;
@@ -59,4 +60,4 @@
       flex-direction: column-reverse;
     }
   }
-  
+   */
