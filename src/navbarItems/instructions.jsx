@@ -1,8 +1,8 @@
 import NavBar from "../common/navbar"
-import Tablero from '../../public/assets/imgs/Tablero.png'
-import Ficha from '../../public/assets/imgs/Verde.png'
+import Tablero from '../../public/assets/imgs/tablero.png'
+import Ficha from '../../public/assets/imgs/verde.png'
 import Casa from '../../public/assets/imgs/casa.png'
-import './Instructions.css'
+import './instructions.css'
 
 function ComponenteJuego(src,title,Descripcion){
     return(

@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import NavBar from '../common/navbar';
-import './Form.css';
+import './form.css';
 import axios from 'axios';
 import API_URL from "../config";
 

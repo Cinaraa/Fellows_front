@@ -1,7 +1,7 @@
 import './App.css'
 import NavBar from './navbar';
-import Main_Image from  '../../public/assets/imgs/Guerra.png'
-import Logo from '../../public/assets/imgs/Logo.png'
+import Main_Image from  '../../public/assets/imgs/guerra.png'
+import Logo from '../../public/assets/imgs/logo.png'
 
 function Home() {
   return (

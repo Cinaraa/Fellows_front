@@ -1,4 +1,4 @@
-import './Board.css';
+import './board.css';
 import Cell from './cell';
 
 

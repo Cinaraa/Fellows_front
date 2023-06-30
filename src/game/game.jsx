@@ -1,8 +1,8 @@
-import './Game.css';
+import './game.css';
 import {useState } from "react";
-import Board from './Board';
-import Logo from '../../public/assets/imgs/Logo.png';
-import PlayerTable from './PlayerTable';
+import Board from './board';
+import Logo from '../../public/assets/imgs/logo.png';
+import PlayerTable from './playerTable';
 import axios from 'axios';
 import { AuthContext } from '../auth/AuthContext';
 import API_URL from "../config";

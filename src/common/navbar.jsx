@@ -1,5 +1,5 @@
 /* eslint-disable no-unused-vars */
-import './NavBar.css'
+import './navbar.css'
 import React, {useContext} from 'react';
 import { AuthContext } from '../auth/AuthContext';
 
